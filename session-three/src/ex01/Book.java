@@ -1,4 +1,4 @@
-package worksheet;
+package ex01;
 
 /**
  * Create a class for books. Books have authors and titles.
