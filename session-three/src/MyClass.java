@@ -1,12 +1,18 @@
-public class MyClass {
+/**
+ * @author KLM
+ */
 
+/**
+ * blah blah blah
+ */
+public class MyClass {
     /**
-     * Joins two strings together
-     * @param one - first string
-     * @param two - second string
-     * @return the concatenation of the two arguments
+     * blah blah blah
+     * @param one xxxx
+     * @param two yyy
+     * @return zzzz
      */
-    public String concatenate(String one, String two) {
+    public String concatenate(String one, String two){
         return one + two;
     }
 }
