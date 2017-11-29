@@ -30,7 +30,7 @@ public class IntegerStack implements Stack {
 
     @Override
     public Integer top() {
-        // pop the top element and then restack it
+        // pop the top element and then re-stack it
         try {
             Integer tmp = pop();
             push(tmp);
