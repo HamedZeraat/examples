@@ -6,22 +6,22 @@ import java.util.List;
 /**
  * Implementation of the Stack interface containing Integer elements
  */
-public class GenericStack implements Stack {
+public class GenericStack<T> implements Stack<T> {
     // Add items to the "list" so the "top" of the stack is the end of the list
-    private List stack;
+    private List<T> stack;
 
     public GenericStack(){
-        stack = new ArrayList();
+        stack = new ArrayList<>();
     }
     @Override
-    public void push(Integer x) {
+    public void push(T x) {
         stack.add(x);
     }
 
     @Override
-    public Integer pop() throws RuntimeException{
+    public T pop() throws RuntimeException{
         try {
-            return (Integer) stack.remove(stack.size() - 1);
+            return stack.remove(stack.size() - 1);
         }
         catch (Exception ex){
             throw new RuntimeException("Stack empty");
@@ -29,10 +29,10 @@ public class GenericStack implements Stack {
     }
 
     @Override
-    public Integer top() {
+    public T top() {
         // pop the top element and then re-stack it
         try {
-            Integer tmp = pop();
+            T tmp = pop();
             push(tmp);
             return tmp;
         }
