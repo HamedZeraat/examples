@@ -4,7 +4,7 @@ public class MyMain {
     public static void main(String[] args) {
         final int TEN = 10;
 
-        Stack<String> mystack = new GenericStack<>();
+        Stack<Integer> mystack = new GenericStack<>();
 
         try {
             mystack.pop();
@@ -14,14 +14,14 @@ public class MyMain {
         }
 
         try {
-            String item = mystack.top();
+            Integer item = mystack.top();
         }
         catch (Exception ex){
             System.out.println("Top went wrong = good");
         }
 
         for (int i=1; i <= TEN; i++){
-            mystack.push("" + i);
+            mystack.push(i);
         }
 
         System.out.println("Top = " + mystack.top());

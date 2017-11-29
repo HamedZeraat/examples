@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Implementation of the Stack interface containing Integer elements
  */
-public class GenericStack<T> implements Stack<T> {
+public class GenericStack<T extends Number> implements Stack<T> {
     // Add items to the "list" so the "top" of the stack is the end of the list
     private List<T> stack;
 
