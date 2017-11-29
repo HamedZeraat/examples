@@ -9,7 +9,11 @@ public class GenericListPrint {
     // generic method printArray
     public static <E> void printArray(E[] inputArray) {
         // Display array elements
-        Arrays.stream(inputArray).forEach(x -> System.out.print(' ' + x.toString()));
+        //Arrays.stream(inputArray).forEach(x -> System.out.print(' ' + x.toString()));
+
+        for (E x: inputArray){
+            System.out.print(' ' + x.toString());
+        }
         System.out.println();
     }
 

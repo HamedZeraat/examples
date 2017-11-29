@@ -19,10 +19,17 @@ public class GenericMax {
         System.out.printf("Max of %d, %d and %d is %d\n\n",
                 3, 4, 5, max(3, 4, 5));
 
-        System.out.printf("Maxm of %.1f,%.1f and %.1f is %.1f\n\n",
+        System.out.printf("Max of %.1f,%.1f and %.1f is %.1f\n\n",
                 6.6, 8.8, 7.7, max(6.6, 8.8, 7.7));
 
         System.out.printf("Max of %s, %s and %s is %s\n", "pear",
                 "apple", "orange", max("pear", "apple", "orange"));
+
+        Person p1 = new Person("Fred", 35);
+        Person p2 = new Person("Betty", 21);
+        Person p3 = p1;
+
+        // max(p1,p2,p3);
+
     }
 }
