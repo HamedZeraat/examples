@@ -52,8 +52,23 @@ public class LinkedList<T> {
         return size;
     }
 
-    public void add(T value) {
-        head = addToEnd(head, value);
+//    public void add(T value) {
+//        head = addToEnd(head, value);
+//        size++;
+//    }
+
+    public void add(T value){
+        Node newItem = new Node<>(value,null);
+
+        if (head == null){
+            head = newItem;
+        } else {
+            Node<T> node = head;
+            while(node.getNext() != null){
+                node = node.getNext();
+            }
+            node.setNext(newItem);
+        }
         size++;
     }
 
