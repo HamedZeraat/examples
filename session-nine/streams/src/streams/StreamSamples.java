@@ -10,11 +10,11 @@ import java.util.stream.*;
 
 public class StreamSamples {
     public static void main(String[] args) {
-        forEachExamples();
-        forEachExamples();
-        mapExamples();
-        filterExamples();
-        combinedExample();
+//        forEachExamples();
+//        forEachExamples();
+//        mapExamples();
+//        filterExamples();
+//        lazyCombinedExample();
         lazyEvaluationExample();
     }
 
@@ -92,14 +92,15 @@ public class StreamSamples {
      * An example that combines map and filter operations. Used to illustrate lazy evaluation.
      */
 
-    public static void combinedExample() {
+    public static void lazyCombinedExample() {
         Integer[] ids = {16, 8, 4, 2, 1};
         System.out.printf("First Googler with salary over $500K: %s%n",
                 Stream.of(ids).map(EmployeeSamples::findGoogler)
                         .filter(e -> e != null)
-                        .filter(e -> e.getSalary() > 500_000)
+                        .filter(e -> e.getSalary() > 500_000_000)
                         .findFirst()
-                        .orElse(null));
+                        .orElse(null)
+        );
     }
 
     /**

@@ -4,7 +4,7 @@ import timing.*;
 
 public class ParallelTests {
     public static void main(String[] args) {
-        //compareOutput();
+        compareOutput();
         compareTiming();
     }
 
@@ -22,9 +22,9 @@ public class ParallelTests {
             double[] nums = MathUtils.randomNums(size);
             Op serialSum = () -> MathUtils.fancySum1(nums);
             Op parallelSum = () -> MathUtils.fancySum2(nums);
-            System.out.printf("Serial sum for length   %,d.%n", size);
+            System.out.printf("Serial sum for length   %,d.", size);
             Op.timeOp(serialSum);
-            System.out.printf("Parallel sum for length %,d.%n", size);
+            System.out.printf("Parallel sum for length %,d.", size);
             Op.timeOp(parallelSum);
         }
     }
