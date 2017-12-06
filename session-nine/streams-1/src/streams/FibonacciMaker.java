@@ -1,4 +1,4 @@
-package coreservlets.streams;
+package streams;
 
 import java.util.function.Supplier;
 

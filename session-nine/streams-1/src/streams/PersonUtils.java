@@ -1,4 +1,4 @@
-package coreservlets.streams;
+package streams;
 
 public class PersonUtils {
   private static final String[] possibleFirstNames =
