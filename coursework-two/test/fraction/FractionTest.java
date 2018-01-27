@@ -8,13 +8,11 @@ public class FractionTest {
 
     @Test
     public void testAdd() {
-        // Tests that are expected to succeed
+        // Tests that are expected to succeed or fail
     }
 
     @Test(expected = ArithmeticException.class)
     public void testDivideByZero() {
         // test that should throw an ArithmeticException
     }
-
-
 }
