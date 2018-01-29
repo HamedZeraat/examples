@@ -4,7 +4,7 @@
  * This is the main program that runs various versions of fibonacci.
  */
 
-import static fibmemo.Fibonacci.fibonacci;
+import static fibrecur.Fibonacci.fibonacci;
 
 public class Launcher {
     /**

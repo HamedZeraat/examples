@@ -1,6 +1,6 @@
 package app;
 
-import thirdpackage.Silly;
+import firstpackage.Silly;
 import spec.MyInterface;
 
 /**
