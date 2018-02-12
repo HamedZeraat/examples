@@ -1,29 +1,52 @@
-package saddlepoints;
+package saddlePoints;
 
-import static org.junit.Assert.*;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import saddlePoints.SaddlePoints;
 
-/**
- * @author Your name goes here
- *
- */
+import static org.junit.Assert.*;
+
 public class SaddlePointsTest {
-    SaddlePoints sp = new SaddlePoints(); // create an instance variable
-
-    // If you use the same variables in multiple tests,
-    //  declare them here
+    private SaddlePoints sp;
 
     @Before
     public void setUp() throws Exception {
-        // If you use the same variables in multiple tests,
-        //  assign values to them here
+         sp = new SaddlePoints(); // create an instance variable
     }
 
     @Test
-    public void testSomeMethod() {
-        // Put tests here
-        // Put sp. in front of every call to a method in SaddlePoints
+    public void createRandomArray() {
+    }
+
+    @Test
+    public void largest() {
+    }
+
+    @Test
+    public void smallest() {
+    }
+
+    @Test
+    public void largestValues() {
+    }
+
+    @Test
+    public void smallestValues() {
+    }
+
+    @Test
+    public void hasSaddlePoint() {
+    }
+
+    @Test
+    public void saddlePointRow() {
+    }
+
+    @Test
+    public void saddlePointColumn() {
+    }
+
+    private int[] setupArray(int elements){
+
     }
 }
