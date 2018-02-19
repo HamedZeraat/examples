@@ -1,0 +1,29 @@
+package functionexamplearrays;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Random;
+
+public class MyMain {
+    public static void main(String[] args) {
+        Integer[] intArray = {1, 2, 3, 4, 5};
+        Random r = new Random();
+        for (int i=0; i < intArray.length; i++) {
+            intArray[i] = r.nextInt();
+        }
+//        Comparator mc = new MyComparator();
+        printIt(intArray);
+//        Arrays.sort(intArray,new MyComparator());
+        Arrays.sort(intArray,(x,y) -> y - x);
+        printIt(intArray);
+    }
+
+    public static void printIt(Integer[] intArray){
+        System.out.println("***** OUTPUT *****");
+        for (int item : intArray) {
+            System.out.println(item);
+        }
+    }
+}
+
+// AIC - Anonymous Inner Classes
