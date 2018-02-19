@@ -25,6 +25,7 @@ The example code from the lectures, coursework, and exercises (worksheets)
 
 ### Worksheets (exercises)
 --
+
 Where there is provided code it will appear under the appropriate folder, i.e., `worksheet-xxx`, where `xxx` is replaced by the worksheet number.
 
 
