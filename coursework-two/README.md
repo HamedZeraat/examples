@@ -96,7 +96,7 @@ Method signature | What it does
 `public Fraction negate()` | Returns a new `Fraction` that has the same numeric value of `this` fraction, but the opposite sign.
 `public Fraction inverse()` | The inverse of `a/b` is `b/a`.
 `@Override`<br/>`public boolean equals(Object o)` | Returns `true` if `o` is a `Fraction` equal to `this`, and `false` in all other cases.<br/><br/>You need this method for your `assertEquals(expected, actual)` JUnit tests to work! The `assertEquals` method calls *your* `equals` method to do its testing.
-`@Override`<br/>`public int compareTo(Object o)` | If `o` is a `Fraction` or an `int`, this method returns:<ul><li>A negative `int` if `this` is less than `o`.</li><li>Zero if `this` is equal to `o`.</li><li>A positive `int` if `this` is greater than `o`.</li></ul>If `o` is neither a `Fraction` nor an `int`, this method throws a `ClassCastException`.
+`@Override`<br/>`public int compareTo(Fraction o)` | If `o` is a `Fraction` or an `int`, this method returns:<ul><li>A negative `int` if `this` is less than `o`.</li><li>Zero if `this` is equal to `o`.</li><li>A positive `int` if `this` is greater than `o`.</li></ul>If `o` is neither a `Fraction` nor an `int`, this method throws a `ClassCastException`.
 `@Override`<br/>`public String toString()` | Returns a `String` of the form `n/d`, where `n` is the *numerator* and `d` is the *denominator*.<br/>However, if `d` is `1`, just return `n` (as a `String`).<br/> The returned `String` should not contain any blanks.<br/>If the fraction represents a negative number, a minus sign should precede `n`.<br/>This should be one of the first methods you write, because it will help you in debugging.
 
 #### Notes:
